@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;EACtB,UAAU,EAAE,MAAM;CACrB;;AAED,eAAe;ADNf,SAAS",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/_base.scss",
+        "../scss/_firstView.scss",
+        "../scss/_secondView.scss",
+        "../scss/_thirdView.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
