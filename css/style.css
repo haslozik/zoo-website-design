@@ -20,11 +20,12 @@
   position: absolute;
   top: 0;
   overflow: hidden;
+  z-index: 5;
 }
 
 #menu #menu__close {
   color: #fff;
-  padding: 36px;
+  padding: 36px 26px;
   font-size: 24px;
   z-index: 5;
   cursor: pointer;
@@ -60,6 +61,8 @@
   -webkit-transition: .2s;
   transition: .2s;
   cursor: pointer;
+  width: 100%;
+  text-align: center;
 }
 
 #menu .menu__list .menu__listItem:hover {
@@ -75,11 +78,12 @@
   background-size: cover;
   font-family: "Noto Sans KR";
   color: #fff;
+  z-index: 2;
 }
 
 .firstView #firstView__topMenuButton {
   color: #fff;
-  padding: 36px;
+  padding: 36px 26px;
   font-size: 21px;
   z-index: 5;
   cursor: pointer;
@@ -91,7 +95,7 @@
 }
 
 .firstView .firstView__top {
-  margin: 20px 20px;
+  margin: 20px 0 0 20px;
 }
 
 .firstView .firstView__top .firstView__logoMainText {
@@ -101,5 +105,44 @@
 .firstView .firstView__top .firstView__logoMainText--smaller {
   font-size: 15px;
   font-weight: 600;
+}
+
+.firstView .firstView__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 200px;
+  /* arrow */
+}
+
+.firstView .firstView__bottom .firstView__bottomMainText {
+  padding: 0 20px;
+  font-size: 30px;
+}
+
+.firstView .firstView__bottom .firstView__bottomText {
+  font-size: 13px;
+  padding: 5px 22px 22px 22px;
+  font-weight: 300;
+}
+
+.firstView .firstView__bottom .firstView__bottomText--lowest {
+  padding: 0px 22px 22px 22px;
+  font-weight: 700;
+}
+
+.firstView .firstView__bottom .firstView__arrowBottom {
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  background: #ecd1b3;
+}
+
+.firstView .firstView__bottom .firstView__arrowBottom .fa-long-arrow-alt-right {
+  padding: 35px 40px;
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,10 +10,11 @@
     background-size: cover;
     font-family: $mainFont;
     color: #fff;
+    z-index: 2;
 
     #firstView__topMenuButton {
         color: #fff;
-        padding: 36px;
+        padding: 36px 26px;
         font-size: 21px;
         z-index: 5;
         cursor: pointer;
@@ -24,13 +25,51 @@
     }
 
     .firstView__top {
-        margin: 20px 20px;
+        margin: 20px 0 0 20px;
 
         .firstView__logoMainText {
             color: #fff;
             &--smaller {
                 font-size: 15px;
                 font-weight: 600;
+            }
+        }
+    }
+
+    .firstView__bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 200px;
+
+        .firstView__bottomMainText {
+            padding: 0 20px;
+            font-size: 30px;
+        }
+
+        .firstView__bottomText {
+            font-size: 13px;
+            padding: 5px 22px 22px 22px;
+            font-weight: 300;
+            &--lowest {
+                padding: 0px 22px 22px 22px;
+                font-weight: 700;
+            }
+        }
+
+        /* arrow */
+        .firstView__arrowBottom {
+            position: absolute;
+            bottom: -80px;
+            right: -80px;
+            border-radius: 50%;
+            height: 160px;
+            width: 160px;
+            background: #ecd1b3;
+
+            .fa-long-arrow-alt-right {
+                padding: 35px 40px;
+                font-size: 30px;
             }
         }
     }
