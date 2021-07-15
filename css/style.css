@@ -24,15 +24,20 @@
 
 #menu #menu__close {
   color: #fff;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 28px;
+  padding: 36px;
+  font-size: 24px;
   z-index: 5;
+  cursor: pointer;
+  display: none;
+  float: right;
+}
+
+#menu #menu__close:hover {
+  color: #eee;
 }
 
 #menu .menu__list {
-  height: 100vh;
+  height: calc(100vh - 180px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,11 +51,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  clear: both;
 }
 
 #menu .menu__list .menu__listItem {
   font-size: 30px;
   padding: 30px 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+}
+
+#menu .menu__list .menu__listItem:hover {
+  color: #e0e0e0;
 }
 
 .firstView {
@@ -60,14 +73,33 @@
   background: linear-gradient(rgba(193, 158, 130, 0.5), rgba(193, 158, 130, 0.5)), url("../img/bg1.jpg");
   background-position: center;
   background-size: cover;
+  font-family: "Noto Sans KR";
+  color: #fff;
 }
 
 .firstView #firstView__topMenuButton {
   color: #fff;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 25px;
+  padding: 36px;
+  font-size: 21px;
   z-index: 5;
+  cursor: pointer;
+  float: right;
+}
+
+.firstView #firstView__topMenuButton:hover {
+  color: #eee;
+}
+
+.firstView .firstView__top {
+  margin: 20px 20px;
+}
+
+.firstView .firstView__top .firstView__logoMainText {
+  color: #fff;
+}
+
+.firstView .firstView__top .firstView__logoMainText--smaller {
+  font-size: 15px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

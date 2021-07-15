@@ -14,3 +14,5 @@ const menuClose = document.getElementById("menu__close");
         menuOpener.style.display = 'block';
         menuClose.style.display = 'none';
     }
+
+    
