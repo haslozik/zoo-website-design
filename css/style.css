@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,4 +9,65 @@
 
 /* variables */
 /*views*/
+#menu {
+  height: 0vh;
+  width: 100%;
+  background: #cba68e;
+  color: #fff;
+  font-family: "Noto Sans KR";
+  -webkit-transition: .2s;
+  transition: .2s;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+#menu #menu__close {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 28px;
+  z-index: 5;
+}
+
+#menu .menu__list {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#menu .menu__list .menu__listItem {
+  font-size: 30px;
+  padding: 30px 0;
+}
+
+.firstView {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 158, 130, 0.5)), to(rgba(193, 158, 130, 0.5))), url("../img/bg1.jpg");
+  background: linear-gradient(rgba(193, 158, 130, 0.5), rgba(193, 158, 130, 0.5)), url("../img/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.firstView #firstView__topMenuButton {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 25px;
+  z-index: 5;
+}
 /*# sourceMappingURL=style.css.map */

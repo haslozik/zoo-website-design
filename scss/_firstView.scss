@@ -1,0 +1,20 @@
+.firstView {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(193, 158, 130, 0.5),
+        rgba(193, 158, 130, 0.5)
+        ),
+        url("../img/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+
+    #firstView__topMenuButton {
+        color: #fff;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 25px;
+        z-index: 5;
+    }
+}

@@ -8,10 +8,31 @@
 
     <title>ZOO Website Design</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/a821291b86.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    
+
+    <!-- menu -->
+    <div id="menu">
+        <i class="fas fa-times" id="menu__close" onclick="closeMenu()"></i>
+        <ul class="menu__list">
+            <li class="menu__listItem">animals</li>
+            <li class="menu__listItem">about</li>
+            <li class="menu__listItem">contact</li>
+        </ul>
+    </div>
+    <!-- first view -->
+    <div class="firstView">
+        <div class="firstView__top">
+            <i class="fas fa-bars" id="firstView__topMenuButton" onclick="openMenu()"></i>
+        </div>
+    </div>
+
     
 
+<script src="app.js"></script>
 </body>
 </html>
