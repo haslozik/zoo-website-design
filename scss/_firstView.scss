@@ -10,7 +10,7 @@
     background-size: cover;
     font-family: $mainFont;
     color: #fff;
-    z-index: 2;
+    float: left;
 
     #firstView__topMenuButton {
         color: #fff;
@@ -41,6 +41,7 @@
         bottom: 0;
         width: 100vw;
         height: 200px;
+        overflow: hidden;
 
         .firstView__bottomMainText {
             padding: 0 20px;

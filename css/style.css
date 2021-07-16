@@ -53,6 +53,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   clear: both;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 #menu .menu__list .menu__listItem {
@@ -78,7 +81,7 @@
   background-size: cover;
   font-family: "Noto Sans KR";
   color: #fff;
-  z-index: 2;
+  float: left;
 }
 
 .firstView #firstView__topMenuButton {
@@ -112,6 +115,7 @@
   bottom: 0;
   width: 100vw;
   height: 200px;
+  overflow: hidden;
   /* arrow */
 }
 
@@ -144,5 +148,17 @@
 .firstView .firstView__bottom .firstView__arrowBottom .fa-long-arrow-alt-right {
   padding: 35px 40px;
   font-size: 30px;
+}
+
+.secondView {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 158, 130, 0.5)), to(rgba(193, 158, 130, 0.5))), url("../img/bg1.jpg");
+  background: linear-gradient(rgba(193, 158, 130, 0.5), rgba(193, 158, 130, 0.5)), url("../img/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: "Noto Sans KR";
+  color: #fff;
+  float: left;
 }
 /*# sourceMappingURL=style.css.map */
