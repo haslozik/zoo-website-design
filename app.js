@@ -15,10 +15,12 @@ const menuList = document.getElementById("menu__itemsList");
     }
 
     function closeMenu() {
-        menu.style.height = '0vh';
-        menuOpener.style.display = 'block';
-        menuClose.style.display = 'none';
         menuList.style.opacity = '0';
+        setTimeout(() => {
+            menu.style.height = '0vh';
+            menuOpener.style.display = 'block';
+            menuClose.style.display = 'none';
+        }, 500);
     }
 
     
