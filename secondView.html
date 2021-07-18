@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZOO Website Design</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/a821291b86.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- menu -->
+    <div id="menu">
+        <i class="fas fa-times" id="menu__close" onclick="closeMenu()"></i>
+        <ul class="menu__list" id="menu__itemsList">
+            <li class="menu__listItem">animals</li>
+            <li class="menu__listItem">about</li>
+            <li class="menu__listItem">contact</li>
+        </ul>
+    </div>
+    <!---->
+    <!-- second view -->
+    <div class="secondView">
+        <i class="fas fa-bars" id="firstView__topMenuButton" onclick="openMenu()"></i>
+        <div class="firstView__top">
+            <h2 class="firstView__logoMainText">aplanet</h2>
+            <h5 class="firstView__logoMainText--smaller">we love the planet</h5>
+        </div>
+
+        <h2 class="secondView__planText">Choose a plan</h2>
+        <div class="secondView__planList">
+            <div class="secondView__planListItem secondView__planListItem--first">
+                <h4 class="secondView__itemText">Week<br>Subscription</h4>
+                <h2 class="secondView__itemTextPrice">$1.99</h2>
+            </div>
+            <div class="secondView__planListItem secondView__planListItem--second">
+                <h4 class="secondView__itemText">1 Month<br>Subscription</h4>
+                <h2 class="secondView__itemTextPrice">$4.39</h2>
+            </div>
+            <div class="secondView__planListItem secondView__planListItem--third">
+                <h4 class="secondView__itemText">3 Month<br>Subscription</h4>
+                <h2 class="secondView__itemTextPrice">$9.99</h2>
+            </div>
+            <div class="secondView__planListItem secondView__planListItem--fourth">
+                <h4 class="secondView__itemText">6 Month<br>Subscription</h4>
+                <h2 class="secondView__itemTextPrice">$13</h2>
+            </div>
+        </div>
+        <h2 class="secondView__planText--bottom">Last step to enjoy</h2>
+    </div>
+    <!---->
+
+<script src="app.js"></script>
+</body>
+</html>

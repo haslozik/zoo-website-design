@@ -1,10 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* variables */
@@ -14,7 +19,7 @@
   width: 100%;
   background: #cba68e;
   color: #fff;
-  font-family: "Noto Sans KR";
+  font-family: "Raleway";
   -webkit-transition: .2s;
   transition: .2s;
   position: absolute;
@@ -79,9 +84,8 @@
   background: linear-gradient(rgba(193, 158, 130, 0.5), rgba(193, 158, 130, 0.5)), url("../img/bg1.jpg");
   background-position: center;
   background-size: cover;
-  font-family: "Noto Sans KR";
+  font-family: "Raleway";
   color: #fff;
-  float: left;
 }
 
 .firstView #firstView__topMenuButton {
@@ -106,8 +110,8 @@
 }
 
 .firstView .firstView__top .firstView__logoMainText--smaller {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .firstView .firstView__bottom {
@@ -153,12 +157,107 @@
 .secondView {
   width: 100vw;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 158, 130, 0.5)), to(rgba(193, 158, 130, 0.5))), url("../img/bg1.jpg");
-  background: linear-gradient(rgba(193, 158, 130, 0.5), rgba(193, 158, 130, 0.5)), url("../img/bg1.jpg");
+  background: #c19e82;
+  font-family: "Raleway";
+  color: #fff;
+}
+
+.secondView #firstView__topMenuButton {
+  color: #fff;
+  padding: 36px 26px;
+  font-size: 21px;
+  z-index: 5;
+  cursor: pointer;
+  float: right;
+}
+
+.secondView #firstView__topMenuButton:hover {
+  color: #eee;
+}
+
+.secondView .firstView__top {
+  margin: 20px 0 0 20px;
+}
+
+.secondView .firstView__top .firstView__logoMainText {
+  color: #e8cdaf;
+}
+
+.secondView .firstView__top .firstView__logoMainText--smaller {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.secondView .secondView__planText {
+  padding: 20px;
+}
+
+.secondView .secondView__planText--bottom {
+  font-size: 12px;
+  padding: 0 0 40px 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.secondView .secondView__planList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100% - 250px);
+}
+
+.secondView .secondView__planList .secondView__planListItem {
+  height: calc((100% / 4) - 30px);
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.secondView .secondView__planList .secondView__planListItem--first {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 158, 130, 0.3)), to(rgba(193, 158, 130, 0.3))), url("../img/planList1.jpg");
+  background: linear-gradient(rgba(193, 158, 130, 0.3), rgba(193, 158, 130, 0.3)), url("../img/planList1.jpg");
   background-position: center;
   background-size: cover;
-  font-family: "Noto Sans KR";
-  color: #fff;
-  float: left;
+}
+
+.secondView .secondView__planList .secondView__planListItem--second {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 158, 130, 0.3)), to(rgba(193, 158, 130, 0.3))), url("../img/planList2.jpg");
+  background: linear-gradient(rgba(193, 158, 130, 0.3), rgba(193, 158, 130, 0.3)), url("../img/planList2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.secondView .secondView__planList .secondView__planListItem--third {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 158, 130, 0.3)), to(rgba(193, 158, 130, 0.3))), url("../img/planList3.jpg");
+  background: linear-gradient(rgba(193, 158, 130, 0.3), rgba(193, 158, 130, 0.3)), url("../img/planList3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.secondView .secondView__planList .secondView__planListItem--fourth {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 158, 130, 0.3)), to(rgba(193, 158, 130, 0.3))), url("../img/planList4.jpg");
+  background: linear-gradient(rgba(193, 158, 130, 0.3), rgba(193, 158, 130, 0.3)), url("../img/planList4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.secondView .secondView__planList .secondView__planListItem .secondView__itemText {
+  font-size: 20px;
+}
+
+.secondView .secondView__planList .secondView__planListItem .secondView__itemTextPrice {
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */

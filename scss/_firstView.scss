@@ -10,7 +10,6 @@
     background-size: cover;
     font-family: $mainFont;
     color: #fff;
-    float: left;
 
     #firstView__topMenuButton {
         color: #fff;
@@ -30,8 +29,8 @@
         .firstView__logoMainText {
             color: #fff;
             &--smaller {
-                font-size: 15px;
-                font-weight: 600;
+                font-size: 12px;
+                font-weight: 400;
             }
         }
     }
