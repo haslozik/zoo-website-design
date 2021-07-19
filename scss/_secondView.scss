@@ -33,7 +33,7 @@
         padding: 20px;
 
         &--bottom {
-            font-size: 12px;
+            font-size: 17px;
             padding: 0 0 40px 20px;
             position: absolute;
             bottom: 0;
@@ -94,6 +94,22 @@
             .secondView__itemTextPrice {
                 font-size: 30px;
             }
+        }
+    }
+
+    /* arrow */
+    .firstView__arrowBottom {
+        position: absolute;
+        bottom: -80px;
+        right: -80px;
+        border-radius: 50%;
+        height: 160px;
+        width: 160px;
+        background: #ecd1b3;
+
+        .fa-long-arrow-alt-right {
+            padding: 35px 40px;
+            font-size: 30px;
         }
     }
 }

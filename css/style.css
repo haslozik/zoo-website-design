@@ -160,6 +160,7 @@ a {
   background: #c19e82;
   font-family: "Raleway";
   color: #fff;
+  /* arrow */
 }
 
 .secondView #firstView__topMenuButton {
@@ -193,7 +194,7 @@ a {
 }
 
 .secondView .secondView__planText--bottom {
-  font-size: 12px;
+  font-size: 17px;
   padding: 0 0 40px 20px;
   position: absolute;
   bottom: 0;
@@ -258,6 +259,21 @@ a {
 }
 
 .secondView .secondView__planList .secondView__planListItem .secondView__itemTextPrice {
+  font-size: 30px;
+}
+
+.secondView .firstView__arrowBottom {
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  background: #ecd1b3;
+}
+
+.secondView .firstView__arrowBottom .fa-long-arrow-alt-right {
+  padding: 35px 40px;
   font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
