@@ -1,0 +1,174 @@
+.thirdViewTop {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(
+        rgba(49, 49, 49, 0.3),
+        rgba(59, 59, 59, 0.3)
+        ),url("../img/thrdBg.jpg");
+    background-position: left;
+    background-size: cover;
+    color: #fff;
+    font-family: $mainFont;
+
+    /* top */
+    #firstView__topMenuButton {
+        color: #fff;
+        padding: 36px 26px;
+        font-size: 21px;
+        z-index: 5;
+        cursor: pointer;
+        float: right;
+        &:hover {
+            color: #eee;
+        }
+    }
+
+    .firstView__top {
+        margin: 20px 0 0 20px;
+
+        .firstView__logoMainText {
+            color: #fff;
+            &--smaller {
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .thirdViewTop__mainTitleContent {
+        height: calc(100% - 130px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .thirdViewTop__mainTitleText {
+            font-size: 38px;
+        }
+    }
+}
+
+.thirdViewBottom {
+    margin-top: -30px;
+    height: calc(60vh + 100px);
+    border-radius: 35px;
+    width: 100%;
+    background: rgb(193, 158, 130);
+    color: #fff;
+    font-family: $mainFont;
+
+    .thirdViewBottom__sliderCotainer {
+        height: 62%;
+
+        .thirdViewBottom__sliderTitleText {
+            padding: 20px 20px 15px 25px;
+        }
+    
+        /* slider */
+        .splide__arrows, .splide__pagination {
+            display: none;
+        }
+    
+        .splide__track {
+            text-align: center;
+        
+            .splide__slide {
+                .splide__image {
+                    height: 160px;
+                    width: 90%;
+                    margin: 5px auto 15px auto;
+                    border-radius: 10px;
+    
+                    &--first {
+                        background: url("../img/tiger.jpg");
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    &--second {
+                        background: url("../img/elephant.jpg");
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    &--third {
+                        background: url("../img/giraffe.jpg");
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+                
+                .splide__slideTitle {
+                    margin: 0 auto;
+                }
+    
+                .splide__slideDescription {
+                    padding-top: 10px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .thirdViewBottom__quickCategoriesContainer {
+        height: 35%;
+        width: 100%;
+
+        .thirdViewBottom__quickCategoriesTitleText {
+            padding: 0px 20px 15px 25px;
+        }
+
+        .thirdViewBottom__quickCategoriesList {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+
+            .thirdViewBottom__quickCategoriesItem {
+                background: #ecd1b3;
+                width: 70px;
+                height: 60px;
+                margin: 10px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .fa-paw, .fa-otter, .fa-hippo, .fa-spider {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-height: 700px) {
+    .thirdViewBottom {
+        .thirdViewBottom__sliderCotainer {
+            .splide__track {
+                .splide__slide {
+                    .splide__image {
+                        height: 110px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-height: 850px) {
+    .thirdViewBottom {
+        .thirdViewBottom__sliderCotainer {
+            .splide__track {
+                .splide__slide {
+                    .splide__image {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

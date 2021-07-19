@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZOO Website Design</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/a821291b86.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+</head>
+<body>
+
+    <!-- menu -->
+    <div id="menu">
+        <i class="fas fa-times" id="menu__close" onclick="closeMenu()"></i>
+        <ul class="menu__list" id="menu__itemsList">
+            <li class="menu__listItem">animals</li>
+            <li class="menu__listItem">about</li>
+            <li class="menu__listItem">contact</li>
+        </ul>
+    </div>
+    <!---->
+    <!-- third view -->
+    <div class="thirdViewTop">
+        <!-- top -->
+        <i class="fas fa-bars" id="firstView__topMenuButton" onclick="openMenu()"></i>
+        <div class="firstView__top">
+            <h2 class="firstView__logoMainText">aplanet</h2>
+            <h5 class="firstView__logoMainText--smaller">we love the planet</h5>
+        </div>
+
+        <div class="thirdViewTop__mainTitleContent">
+            <h1 class="thirdViewTop__mainTitleText">Welcome to<br>New Aplanet</h1>
+        </div>
+    </div>
+    <div class="thirdViewBottom">
+        <div class="thirdViewBottom__sliderCotainer">
+            <h3 class="thirdViewBottom__sliderTitleText">Related for you</h3>
+            <!-- slider -->
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="splide__image splide__image--first"><!-- image --></div>
+                            <h3 class="splide__slideTitle">
+                                Life with a tiger
+                            </h3>
+                            <p class="splide__slideDescription">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Ullam autem perspiciatis voluptate. Voluptate, placeat veniam?
+                            </p>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__image splide__image--second"><!-- image --></div>
+                            <h3 class="splide__slideTitle">
+                                Wild animals
+                            </h3>
+                            <p class="splide__slideDescription">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Repellat excepturi repellendus qui aperiam ipsum?
+                            </p>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__image splide__image--third"><!-- image --></div>
+                            <h3 class="splide__slideTitle">
+                                Giraffe habitat
+                            </h3>
+                            <p class="splide__slideDescription">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Impedit, placeat voluptates consequatur sapiente ab assumenda.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <!-- quick categories -->
+        <div class="thirdViewBottom__quickCategoriesContainer">
+            <h3 class="thirdViewBottom__quickCategoriesTitleText">Quick categories</h3>
+            <div class="thirdViewBottom__quickCategoriesList">
+                <div class="thirdViewBottom__quickCategoriesItem">
+                    <i class="fas fa-paw"></i>
+                </div>
+                <div class="thirdViewBottom__quickCategoriesItem">
+                    <i class="fas fa-otter"></i>
+                </div>
+                <div class="thirdViewBottom__quickCategoriesItem">
+                    <i class="fas fa-hippo"></i>
+                </div>
+                <div class="thirdViewBottom__quickCategoriesItem">
+                    <i class="fas fa-spider"></i>
+                </div>
+            </div>
+        </div>
+        <!---->
+    </div>
+    <!---->
+
+<script src="app.js"></script>
+</body>
+</html>
